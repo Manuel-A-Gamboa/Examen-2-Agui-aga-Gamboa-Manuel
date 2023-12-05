@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<header>
+   <div class="elemento-fijo">
+    <a href="index.html">
+        <img class="logo" src="IMG/logo.png" alt="">
+    </a>
+
+    <input class="Buscar" type="text" placeholder="Buscar" name="Buscar">
+
+
+
+   </div>
+
+   <nav class="nav">
+            <ul class="list">
+                <div class="contenedor-menu-D">
+                    <div class="boton-menu-D" onclick="toggleMenu()">
+                        <img src="IMG/menub.png"  class="list-img">
+                        <p>Menu</p>
+                    </div>
+                    <div class="menu-desplegable-D" id="menuDesplegable">
+                        
+                            <a href="Blu-rays.html">Blu-rays</a>
+                        
+
+                        
+                            <a href="Mangas.html">Mangas</a>
+                        
+                        
+                            <a href="Figuras.html" >Figuras</a>
+                        
+
+                        
+                            <a href="Ropa.html">Ropa</a>
+                            <a href="Posters.html">Posters</a>
+                        
+                    </div>
+
+                </div>
+
+                <li class="list-item">
+                    <div class="list-button">
+                        <img src="IMG/home.png" alt="" class="list-img">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </div>
+
+                </li>
+
+                <li class="list-item">
+                    <div class="list-button">
+                        <img src="IMG/casdabl.png" alt="" class="list-img">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </div>
+
+                </li>
+
+                <div class="contenedor-menu">
+                    <div class="boton-menu">
+                        <img src="IMG/tagb.png"  class="list-img">
+                        <a href="#">Tienda</a>
+                    </div>
+                    <div class="menu-desplegable">
+                        
+                            <a href="Productos.html">Productos</a>
+                        
+
+                        
+                            <a href="Destacados.html">Destacados</a>
+                        
+                        
+                            <a href="Nuevos.html" >Nuevos</a>
+                        
+
+                        
+                            <a href="Ofertas.html">Ofertas</a>
+                        
+                    </div>
+
+                </div>
+
+                <li class="list-item">
+                    <div class="list-button">
+                        <img src="IMG/sbrb.png" alt="" class="list-img">
+                        <a href="Contacto.html" class="nav-link">Contacto</a>
+                    </div>
+
+                </li>
+
+                <li class="list-item">
+                    <div class="list-button">
+                        <img src="IMG/carpb.png" alt="" class="list-img">
+                        <a href="Categorias.html" class="nav-link">Categorias</a>
+                    </div>
+
+                </li>
+
+                <li class="list-item">
+                    <div class="list-button-2">
+                        <img src="IMG/fb2.png" alt="" class="list-img">
+                        <a href="https://es-la.facebook.com/" class="nav-link">Facebook</a>
+                    </div>
+
+                </li>
+
+                <li class="list-item">
+                    <div class="list-button-2">
+                        <img src="IMG/instr.png" alt="" class="list-img">
+                        <a href="https://www.instagram.com/" class="nav-link">Instagram</a>
+                    </div>
+
+                </li>
+
+                <div class="btn-registros">
+                    <img src="IMG/userb.png">
+                    <a href="#" class="nav-link" id="btn-registro" onclick="toggleFormulario()"> Ingresar </a>
+                </div>
+
+                <div class="formulario-container" id="formularioContainer">
+                    <h1 class="Titulo-r">Usuario</h1>
+                        <ul>
+                            <li class="google-btn">
+                                <img src="IMG/goole2.png" alt="">
+                                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F1%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F1%2F&ifkv=ASKXGp3JGiXJXRFm3pPehe7QHfRlqeW5HhLfdresByC9caVz5ZRhzl3MlxU0nbIdzxmf9H6dikru2g&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S33994779%3A1701662884787616&theme=glif">Ingresar con google</a>
+                            </li>
+                            <li class="fb-btn">
+                                <img src="IMG/fb2.png" alt="">
+                                <a href="https://es-la.facebook.com/">Ingresar con Facebook</a>
+                            </li>
+                        </ul>
+
+                    <form>
+                      <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                      <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+                      <div class="rec-column">
+                        <input  type="checkbox" id="rec" name="rec">
+                        <label for="rec">Recordar datos</label>
+
+                      </div>
+                      
+                      <div class="botn">
+                        <button type="submit">Enviar</button>
+                      <img src="IMG/arrow.png" alt="">
+                      </div>
+                      
+                    </form>
+
+                    <ul class="boton-menu-r">
+                        <li>
+                            <a href="Contacto.html">Olvide mi Contraseña</a>
+                        </li>
+                        <li>
+                            <a href="Registro.html">Registrarse</a>
+                        </li>
+                    </div>
+                  </div>
+
+
+            </ul>
+    </ul>
+
+
+
+</nav>
+<div class="fondo-oscuro" id="fondoOscuro"></div>
+
+</header>
+<body>
+
+
+    <div class="barra-opcion">
+        <img src="IMG/learrow.png" alt="">
+        <a href="index.html"><h1>Destacados</h1></a>
+
+
+    </div>
+
+<section class="struc-tienda">
+
+    <div class="vacio-pr">
+
+
+
+    </div>
+
+        <div class="produc-sec">
+            <div class="fila">
+                <div class="item">
+                    <img src="IMG/des1.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $2000.00</p>
+                    <p class="descripcion">Hatsune Miku Symphony 5th Anniversary Music Box Ver Vocaloid Figure</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+
+                <div class="item">
+                    <img src="IMG/des2.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $1000.00</p>
+                    <p class="descripcion">Sonic X Complete Series (Japanese Language) Blu-ray</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+
+                <div class="item">
+                    <img src="IMG/des3.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $1500.00</p>
+                    <p class="descripcion">Hange Zoe (Re-run) Attack on Titan Nendoroid Figure</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+             </div>
+
+             <div class="fila">
+                <div class="item">
+                    <img src="IMG/des4.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $600.00</p>
+                    <p class="descripcion">Fairy Tail - Erza Scarlet Pop Up Parade (Grand Magic Royale Ver.)</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+
+                <div class="item">
+                    <img src="IMG/de5.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $900.00</p>
+                    <p class="descripcion"> Hatsune Miku - Villain Miku Noodle Stopper Figure (Red Color Ver.) (Re-run)</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+
+                <div class="item">
+                    <img src="IMG/des6.jpg" class="product-price-imm" alt="">
+                    <p class="text-price">Precio $150.00</p>
+                    <p class="descripcion">Jujutsu Kaisen Manga Volume 3</p>
+                    <p class="carrito">
+                        <img src="IMG/crt.png" alt="">
+                       <a href="#">Comprar</a>
+                    </p>
+                </div>
+             </div>
+
+             
+        </div>
+
+</section>
+
+
+
+
+
+
+<div class="pie">
+    <div class="barra-b2">
+        <img src="IMG/visa.png" alt="">
+        <img src="IMG/aws.png" alt="">
+        <img src="IMG/pint.png" alt="">
+        <img src="IMG/mscrd.png" alt="">
+
+    </div>
+    <ul class="list-pie">
+        <li>
+            <div>
+                <p class="especial">Crunchyroll</p>
+                <div class="row-pie">
+                    <a href="https://es-la.facebook.com/" >
+                        <img src="IMG/fb2.png" alt="">
+                    </a>
+                <a href="https://twitter.com/"  >
+                    <img src="IMG/twt2.png" alt="">
+                </a>
+                <p>
+                    <img src="IMG/email2.png" onclick="toggleFormularioPie()" alt="">
+                    <p onclick="toggleFormularioPie()">Email </p>
+                </p>
+                <div class="form-mail-cont" id="actForm">
+
+                    <form>
+                        <div class="Column">
+                            <h1>Contacto Instantaneo</h1>
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                        </div>
+
+                        <div class="Column">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                            <button type="submit">Enviar</button>
+                        </div>
+
+                        <div class="Column">
+                            <img src="IMG/x.png" onclick="toggleFormularioPie()" alt="">
+                        </div>
+
+                    </form>
+
+                </div>
+                </div>
+            </div>
+
+
+
+        </li>
+
+        <li>
+            <div class="column-pie">
+                <h1 class="tit-pie" >Nosotros</h1>
+                <a href="Copyright.html" >Politica de Copyright</a>
+                <a href="Privacidad.html"  >Politica de privacidad</a>
+                <a href="Condiciones.html" >Condiciones de servicio</a>
+
+            </div>
+
+        </li>
+
+        <li>
+            <div class="column-pie">
+                <h1 class="tit-pie" >Links utiles</h1>
+                <a href="Ofertas.html" >Ventas y Promociones</a>
+            </div>
+            
+
+        </li>
+
+        <li>
+            <div class="column-pie">
+                <h1 class="tit-pie" >Servicio al cliente</h1>
+                <a href="Contacto.html" >Contactanos</a>
+            </div>
+
+
+
+        </li>
+
+        <li>
+            <div class="row-pie">
+                <a href="https://es-la.facebook.com/" class="icono" >
+                    <img src="IMG/facebook.png" alt="">
+                </a>
+            <a href="https://twitter.com/" class="icono" >
+                <img src="IMG/twutter.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/" class="icono" >
+                <img src="IMG/insta.png" alt="">
+            </a>
+            <p class="icono" onclick="toggleFormularioPie()">
+                <img src="IMG/email.png" >
+            </p>
+
+            </div>
+
+
+
+        </li>
+
+
+
+
+
+    </ul>
+
+    <div class="form-pie">
+        <h1>Boletin por Email</h1>
+        <form>
+            <input type="email" id="emailPie" name="email" placeholder="Tu E-Mail">
+            <input type="password" id="clavelPie" name="clave" placeholder="Tu Contraseña">
+            <button type="submit">Registrarme</button>
+
+
+        </form>
+    </div>
+
+    <div class="copy">
+        <p>¡Gracias por tu visita y regresa pronto!</p>
+        <p>Copyright © 2023, Crunchyroll LLC</p>
+    </div>
+
+
+
+
+</div>
+
+
+<div class="boton-top" id="botonTop" onclick="regresarAlTop()"> 
+    <img src="IMG/arrup.png" onclick="regresarAlTop()">
+</div>
+<div class="boton-top-fb"> 
+    <a href="https://es-la.facebook.com/"><img src="IMG/fb3.png" ></a>
+</div>
+<div class="boton-top-e" onclick="toggleFormularioPie()"> 
+
+    <img src="IMG/sb.png">
+</div>
+
+
+
+
+
+<script src="Js/main.js"></script>
+</body>
+
+</html>
